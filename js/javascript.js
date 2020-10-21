@@ -16,26 +16,29 @@ bottoneGenera.addEventListener('click', function(){
     
     // costo BIGLIETTO
     var prezzo=0.21;
-    var prezzoBiglietto=prezzo*kmDaPercorrere;
+
+    var prezzoBiglietto= prezzo * kmDaPercorrere;
     var offerta='biglietto Standard';
 
     // condizzioni per l'offerta!!
     // sconto minorenne
     if(fasciaEta=='minorenne'){
-        prezzoBiglietto+=prezzoBiglietto*0.2;
+        prezzoBiglietto-=prezzoBiglietto*0.2;
         offerta='sconto minorenne'
     }
     // sconto over65
     else if(fasciaEta=='over65'){
-        prezzoBiglietto+=prezzoBiglietto*0.4;
+        prezzoBiglietto-=prezzoBiglietto*0.4;
         offerta='sconto over65'
     }
     prezzoBiglietto=prezzoBiglietto.toFixed(2)+'Euro';
     var NCarrozza=Math.floor(Math.random()*10)+1;
-    // codice CP------------------------------------->
+    
+    // var codiceCp=Math.floor(Math.random()* (9000 - 9999) +9000;
     document.getElementById('nome-passeggero').innerHTML=nome;
     document.getElementById('offerta-applicata').innerHTML=offerta;
     document.getElementById('carrozza').innerHTML=NCarrozza;
+    // document.getElementById('codice-cp').innerHTML=codiceCp;
     document.getElementById('costo').innerHTML=prezzoBiglietto;
 
 
