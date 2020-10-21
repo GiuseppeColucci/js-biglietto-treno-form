@@ -36,7 +36,7 @@ bottoneGenera.addEventListener('click', function(){
     document.getElementById('nome-passeggero').innerHTML=nome;
     document.getElementById('offerta-applicata').innerHTML=offerta;
     document.getElementById('carrozza').innerHTML=NCarrozza;
-    document.getElementById('costo').innerHTML=costo;
+    document.getElementById('costo').innerHTML=prezzoBiglietto;
 
 
 
