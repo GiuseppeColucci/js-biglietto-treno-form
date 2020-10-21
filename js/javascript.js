@@ -34,11 +34,11 @@ bottoneGenera.addEventListener('click', function(){
     prezzoBiglietto=prezzoBiglietto.toFixed(2)+'Euro';
     var NCarrozza=Math.floor(Math.random()*10)+1;
     
-    // var codiceCp=Math.floor(Math.random()* (9000 - 9999) +9000;
+    var codiceXX=Math.floor(Math.random()* (90000 - 99999) )+90000;
     document.getElementById('nome-passeggero').innerHTML=nome;
     document.getElementById('offerta-applicata').innerHTML=offerta;
     document.getElementById('carrozza').innerHTML=NCarrozza;
-    // document.getElementById('codice-cp').innerHTML=codiceCp;
+    document.getElementById('codice-cp').innerHTML=codiceXX;
     document.getElementById('costo').innerHTML=prezzoBiglietto;
 
 
