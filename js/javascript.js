@@ -40,8 +40,22 @@ bottoneGenera.addEventListener('click', function(){
     document.getElementById('carrozza').innerHTML=NCarrozza;
     document.getElementById('codice-cp').innerHTML=codiceXX;
     document.getElementById('costo').innerHTML=prezzoBiglietto;
-
-
-
+    // VISIBILITA BIGLIETTO
+    container.className='show'
 })
+// RESET BIGLIETTO
+bottoneAnnulla.addEventListener('click', function(){
+    container.className='hidden';
 
+    document.getElementById('nome').value='';
+   
+    document.getElementById('km').value='';
+    
+    document.getElementById('fascia-eta').value='';
+
+    document.getElementById('nome-passeggero').innerHTML='';
+    document.getElementById('offerta-applicata').innerHTML='';
+    document.getElementById('carrozza').innerHTML='';
+    document.getElementById('codice-cp').innerHTML='';
+    document.getElementById('costo').innerHTML='';
+})
